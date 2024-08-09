@@ -1,0 +1,15 @@
+* {
+    font-family: 'saira', 'noto sans tc', sans-serif;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+.class {
+    background-color: antiquewhite;
+}

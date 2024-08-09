@@ -1,15 +1,21 @@
+html,body{
+	height: 100%;
+}
 .colorpalette {
-    width: 400px;
-    background-color: rgb(173, 148, 148);
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    width: 1440px;
+    height: 900px;
+    background-color: rgb(255, 248, 248);
+    padding: 20px;
 }
 .colorpalette .color{
+    width: 400px;
     color: #384252; 
     font-size: 18px;
     font-family: "微軟正黑體";
     font-weight: 800;
     line-height: 2;
     text-align: center;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
     margin: 0;
 }
 .color1 {
