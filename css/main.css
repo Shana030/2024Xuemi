@@ -1,6 +1,7 @@
 * {
     font-family: 'saira', 'noto sans tc', sans-serif;
     box-sizing: border-box;
+    position: relative;
 }
 h1 {
     font-size: 64px;

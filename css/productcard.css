@@ -1,5 +1,5 @@
 html,body{
-	/* height: 100%; */
+	min-height: 100%;
 }
 /* p {
     margin: 0;
@@ -32,6 +32,19 @@ html,body{
     width: 50%;
     height: 100%;
 }
+.card .img .icon:hover {
+    transform: scale(1.2);
+}
+.card .img .icon1 {
+    position: absolute;
+    top: 92%;
+    left: 3%;
+}
+.card .img .icon2 {
+    position: absolute;
+    top: 92%;
+    right: 3%;
+}
 .card .info {
 	display: inline-block;
 	vertical-align: top;
@@ -54,6 +67,32 @@ html,body{
     font-size: 24px;
     padding-bottom: 80px;
 }
+.card .info .spec .tag1 {
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.card .info .spec .tag1:after {
+    content: '';
+	display: inline;
+	width: 0;
+	height: 4px;
+	background-color: #9fd8ef;
+	position: absolute;
+	left: 0;
+    bottom: 0;
+}
+.card .info .spec .tag1:hover:after {
+    content: '';
+	display: block;
+	width: 100%;
+	height: 4px;
+	background-color: #9fd8ef;
+	position: absolute;
+	left: 0;
+    bottom: 0;
+    transition: all 0.5s;
+}
 .card .info .text {
     color: #A1C8DF;
 }
@@ -64,4 +103,17 @@ html,body{
 .card .link {
     color: #C3C6CE;
     text-decoration: none;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+.card .link:hover {
+    font-size: 20px;
+    color: #a5b0d0;
+    
+	border-bottom: 8px solid #A1C8DF;
+	transform: translate(0,-8px);
+}
+.card .link:active {
+    color: #A1C8DF;
 }
