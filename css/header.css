@@ -59,8 +59,8 @@ ul{
 .navbar .logo-item::before{
     content: '';
     display: inline-block;
-    height: 20px;
-    width: 20px;
+    height: 22px;
+    width: 22px;
 	background-image: url('../image/home.svg');
 	background-size: contain;
 	background-repeat: no-repeat;
