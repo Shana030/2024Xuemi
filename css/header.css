@@ -97,3 +97,9 @@ ul{
 .navbar .nav-btn .nav-link{
     margin-left: 6px;
 }
+.main{
+    padding-top: 100px;
+}
+.main .demo-img{
+    width: 1440px;
+}
