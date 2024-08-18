@@ -72,6 +72,10 @@ ul{
 .navbar .nav-link{
     padding: 0 10px;
 }
+.navbar .nav-item{
+  display: flex;
+  align-items: center;
+}
 .navbar .nav-item:before,.nav-btn:before{
     content: '';
     display: inline-block;
