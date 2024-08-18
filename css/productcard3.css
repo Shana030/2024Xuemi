@@ -1,0 +1,119 @@
+html,body{
+	min-height: 100%;
+}
+/* p {
+    margin: 0;
+} */
+.wrapper {
+    height: 100%;
+    background-color: #fff;
+    background: linear-gradient(to bottom,  #e4f5fc 0%,#9fd8ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* display: flex;
+    justify-content: center; */
+    
+	/* overflow: hidden; */
+	padding: 40px;
+}
+.card {
+    width: 1200px;
+    height: 785px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: block;
+    /* margin: 0 auto; */
+	margin-left: auto;
+	margin-right: auto;
+
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+.card .img {
+	display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+.card .img .icon:hover {
+    transform: scale(1.2);
+}
+.card .img .icon1 {
+    position: absolute;
+    top: 92%;
+    left: 3%;
+}
+.card .img .icon2 {
+    position: absolute;
+    top: 92%;
+    right: 3%;
+}
+.card .info {
+	display: inline-block;
+	vertical-align: top;
+    padding: 40px;
+    width: 50%;
+    height: 100%;
+}
+.card .info .product-name {
+    font-size: 86px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.card .info .tag {
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom:80px ;
+}
+.card .info .spec, .card .info .des {
+    color: #a6a6a6;
+    font-size: 24px;
+    padding-bottom: 80px;
+}
+.card .info .spec .tag1 {
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.card .info .spec .tag1:after {
+    content: '';
+	display: inline;
+	width: 0;
+	height: 4px;
+	background-color: #9fd8ef;
+	position: absolute;
+	left: 0;
+    bottom: 0;
+}
+.card .info .spec .tag1:hover:after {
+    content: '';
+	display: block;
+	width: 100%;
+	height: 4px;
+	background-color: #9fd8ef;
+	position: absolute;
+	left: 0;
+    bottom: 0;
+    transition: all 0.5s;
+}
+.card .info .text {
+    color: #A1C8DF;
+}
+.card .info .des {
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
+.card .link {
+    color: #C3C6CE;
+    text-decoration: none;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+.card .link:hover {
+    font-size: 20px;
+    color: #a5b0d0;
+    
+	border-bottom: 8px solid #A1C8DF;
+	transform: translate(0,-8px);
+}
+.card .link:active {
+    color: #A1C8DF;
+}
