@@ -1,17 +1,9 @@
 html,body{
 	min-height: 100%;
 }
-/* p {
-    margin: 0;
-} */
 .wrapper {
     height: 100%;
-    background-color: #fff;
     background: linear-gradient(to bottom,  #e4f5fc 0%,#9fd8ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    /* display: flex;
-    justify-content: center; */
-    
-	/* overflow: hidden; */
 	padding: 40px;
 }
 .card {
@@ -19,31 +11,65 @@ html,body{
     height: 785px;
     background-color: #fff;
     border-radius: 20px;
-    display: block;
-    /* margin: 0 auto; */
+    display: flex;
 	margin-left: auto;
 	margin-right: auto;
-
     box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+}
+ .card .img-container {
+	display: block;
+	width: 50%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
     overflow: hidden;
 }
-.card .img {
-	display: inline-block;
-    width: 50%;
-    height: 100%;
-}
-.card .img .icon:hover {
-    transform: scale(1.2);
-}
-.card .img .icon1 {
+.card .img-container::after{
+    content: '';
+    display: block;
     position: absolute;
-    top: 92%;
-    left: 3%;
+    left: 20px;
+    bottom: 20px;
+
+    background-image: url('../image/share\ 1.svg');
+    width: 34px;
+    height: 34px;
+    background-position: center;
+	background-size: contain;
+    background-repeat: no-repeat;
+
+    transition: 0.3s;
 }
-.card .img .icon2 {
+.card .img-container .image{
     position: absolute;
-    top: 92%;
-    right: 3%;
+    top: 0;
+    left: 0;
+
+    background-image: url('../image/product1.png');
+	width: 100%;
+	height: 100%;
+    background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.card .img-container .image:before{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+    background-image: url('../image/Star\ 1.svg');
+    width: 34px;
+    height: 34px;
+    background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+    transition: 0.3s;
+}
+.card .img-container .image:hover:before,.card .img-container:hover:after{
+    width: 40x;
+    height: 40px;
 }
 .card .info {
 	display: inline-block;
