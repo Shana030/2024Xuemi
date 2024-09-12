@@ -10,7 +10,7 @@
 <body>
     <div class="wrap">
 		<!-- header -->
-        <header class="header">
+        <header>
             <div class="navbar">
                 <div class="nav-group center">
                     <a href="#!" class="logo">
@@ -18,7 +18,7 @@
                     </a>
                 </div>
                 <div class="nav-group center">
-                    <ul class="nav">
+                    <ul id="popup-menu" class="nav">
                         <li class="nav-item">
                             <a href="#!" class="nav-link">About</a>
                         </li>
@@ -40,6 +40,13 @@
                             <div class="icon" style="background-image: url('./image/muayiktea/icon-global.png');"></div>
                         </li>
                     </ul>
+                    
+					<a href="#popup-menu" class="menu-toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+
                 </div>
             </div>
         </header>
@@ -48,11 +55,13 @@
         <section class="main">
             <div class="kv"></div>
             
-            <div class="hero container">
+            <div class="hero container align-center col">
                 <div class="desc">
                     Mua Yik, derived from "a full cup of blessing," is pronounced as "Mua Yi" in Hokkien, metaphoring conjunction and epitome of local custom, history, culture and skills. It represents a brand that carries sound-minded state, natural energy, thought and emotion.
                 </div>
-                <div class="img"></div>
+                <div class="img-container">
+                    <div class="img"></div>
+                </div>
             </div>
             
             <div class="slogan">
@@ -82,29 +91,32 @@
                 
                 <div class="products row">
                     
-                    <div class="product-item">
-                        <div class="background" style="
-        background-image: url('./image/muayiktea/green-tea.webp');"></div>
-                        <div class="mask-dark"></div>
-                        <h4 class="product-name">Green Tea</h4>
+                    <div class="outter">
+                        <div class="product-item">
+                            <div class="img" style="background-image: url('./image/muayiktea/green-tea.webp');"></div>
+                            <div class="mask-dark"></div>
+                            <h4 class="product-name">Green Tea</h4>
+                        </div>
+                    </div><div class="outter">
+                        <div class="product-item">
+                            <div class="img" style="background-image: url('./image/muayiktea/black-tea.webp');"></div>
+                            <div class="mask-dark"></div>
+                            <h4 class="product-name">Black Tea</h4>
+                        </div>
                     </div>
-                    <div class="product-item">
-                        <div class="background" style="
-        background-image: url('./image/muayiktea/black-tea.webp');"></div>
-                        <div class="mask-dark"></div>
-                        <h4 class="product-name">Black Tea</h4>
+                    <div class="outter">
+                        <div class="product-item">
+                            <div class="img" style="background-image: url('./image/muayiktea/oolong-tea.webp');"></div>
+                            <div class="mask-dark"></div>
+                            <h4 class="product-name">Oolong Tea</h4>
+                        </div>
                     </div>
-                    <div class="product-item">
-                        <div class="background" style="
-        background-image: url('./image/muayiktea/oolong-tea.webp');"></div>
-                        <div class="mask-dark"></div>
-                        <h4 class="product-name">Oolong Tea</h4>
-                    </div>
-                    <div class="product-item">
-                        <div class="background" style="
-        background-image: url('./image/muayiktea/white-tea.webp');"></div>
-                        <div class="mask-dark"></div>
-                        <h4 class="product-name">White Tea</h4>
+                    <div class="outter">
+                        <div class="product-item">
+                            <div class="img" style="background-image: url('./image/muayiktea/white-tea.webp');"></div>
+                            <div class="mask-dark"></div>
+                            <h4 class="product-name">White Tea</h4>
+                        </div>
                     </div>
                     
                 </div>
@@ -161,18 +173,18 @@
                         </li>
                     </ul>
                 </div>
-                <div class="privacy">
-                    <div class="privacy-group">
-                        <div class="privacy-item">
-                            <div class="right">Mua Yik Tea© 2024 All right reserved</div>
-                            <a href="#!" class="link">Privacy</a>
-                        </div>
-                        <div class="privacy-item">
-                            <div class="follow">Follow us</div>
-                            <a href="#!" class="icon" style="background-image: url('./image/muayiktea/icon-global.png');"></a>
-                            <a href="#!" class="icon" style="background-image: url('./image/muayiktea/icon-global.png');"></a>
-                            <a href="#!" class="icon" style="background-image: url('./image/muayiktea/icon-global.png');"></a>
-                        </div>
+            </div>
+            <div class="privacy">
+                <div class="privacy-group">
+                    <div class="privacy-item">
+                        <div class="right">Mua Yik Tea© 2024 All right reserved</div>
+                        <a href="#!" class="link">Privacy</a>
+                    </div>
+                    <div class="privacy-item">
+                        <div class="follow">Follow us</div>
+                        <a href="#!" class="icon" style="background-image: url('./image/muayiktea/icon-global.png');"></a>
+                        <a href="#!" class="icon" style="background-image: url('./image/muayiktea/icon-global.png');"></a>
+                        <a href="#!" class="icon" style="background-image: url('./image/muayiktea/icon-global.png');"></a>
                     </div>
                 </div>
             </div>
