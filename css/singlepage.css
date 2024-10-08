@@ -50,7 +50,7 @@ a{
 	Layout
 \* -------------------------- */
 .container{
-	max-width: 1040px;
+	max-width: 1140px;
 	margin: 0 auto;
 }
 .row{
@@ -61,6 +61,54 @@ a{
 	display: flex;
     flex-direction: column;
 }
+
+.col-lg-6,.col-lg-4,.col-lg-3,.col-lg-12,
+.col-md-6,.col-md-4,.col-md-3,.col-md-12,
+.col-sm-6,.col-sm-4,.col-sm-3,.col-sm-12{
+	display: flex;
+    flex-direction: column;
+}
+.col-lg-3{
+	width: 25%;
+}
+.col-lg-4{
+	width: 33.3333333%;
+}
+.col-lg-6{
+	width: 50%;
+}
+.col-lg-12{
+	width: 100%;
+}
+@media screen and (max-width: 768px){
+	.col-md-3{
+		width: 25%;
+	}
+	.col-md-4{
+		width: 33.3333333%;
+	}
+	.col-md-6{
+		width: 50%;
+	}
+	.col-md-12{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 540px){
+	.col-sm-3{
+		width: 25%;
+	}
+	.col-sm-4{
+		width: 33.3333333%;
+	}
+	.col-sm-6{
+		width: 50%;
+	}
+	.col-sm-12{
+		width: 100%;
+	}
+}
+
 .center{
 	display: flex;
     justify-content: center;
@@ -402,12 +450,11 @@ a{
 
 .products{
 	justify-content: space-between;
-	gap: 20px;
-	padding-top: 40px;
+	padding-top: 30px;
 }
 
 .products .outter{
-	width: 49%;
+	padding: 10px;
 }
 
 .products .product-item{
@@ -482,16 +529,16 @@ a{
 	.products {
 		padding: 20px 0;
 	}
-	.products .outter{
-		width: 50%;
-	}
 	.products .product-item::before{
-		padding-top: 120%;
+		padding-top: 70%;
 	}
 }
 @media screen and (max-width: 540px){
+	.products {
+		padding: 0;
+	}
 	.products .outter{
-		width: 100%;
+		padding: 20px 0 0 0;
 	}
 }
 
